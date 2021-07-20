@@ -33,3 +33,6 @@ import USD Rate.postman_collection.json to your postman to check api end point
 
 this url is used for update currnecy rate http://<your domain path>/currency_cron.php
 
+### API call example
+
+show.php diaply tabular data by calling currency api
