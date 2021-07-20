@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "376a5b71-fb25-46e6-ae08-bfecb74adeb1",
+		"name": "USD Rate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User For token",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"rakesh\",\r\n    \"email\":\"rakesh@rockersinfo.com\",\r\n    \"password\":\"rakesh123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/corephp/register.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corephp",
+						"register.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User For token",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rakesh@rockersinfo.com\",\r\n    \"password\":\"rakesh123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/corephp/login.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corephp",
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currency lIst",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvcmVwaHBcLyIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvY29yZXBocFwvIiwiaWF0IjoxNjI2NzY3MTU4LCJleHAiOjE2MjY3NzA3NTgsImRhdGEiOnsidXNlcl9pZCI6IjYifX0.f7rOJahqE0mFEK6phV5u3d2id3iRTSK3jFyBoEKsdcQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rakesh@rockersinfo.com\",\r\n    \"password\":\"rakesh123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/corephp/currencies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corephp",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currency lIst By Id",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvcmVwaHBcLyIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvY29yZXBocFwvIiwiaWF0IjoxNjI2NzY3MTU4LCJleHAiOjE2MjY3NzA3NTgsImRhdGEiOnsidXNlcl9pZCI6IjYifX0.f7rOJahqE0mFEK6phV5u3d2id3iRTSK3jFyBoEKsdcQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rakesh@rockersinfo.com\",\r\n    \"password\":\"rakesh123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/corephp/currencies/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corephp",
+						"currencies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currency lIst By Id History",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvcmVwaHBcLyIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvY29yZXBocFwvIiwiaWF0IjoxNjI2NzY3MTU4LCJleHAiOjE2MjY3NzA3NTgsImRhdGEiOnsidXNlcl9pZCI6IjYifX0.f7rOJahqE0mFEK6phV5u3d2id3iRTSK3jFyBoEKsdcQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rakesh@rockersinfo.com\",\r\n    \"password\":\"rakesh123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/corephp/currencies/1/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corephp",
+						"currencies",
+						"1",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
