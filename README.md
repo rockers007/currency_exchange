@@ -4,8 +4,8 @@
 ### Clone this project using the following commands:
 
 ```
-git@github.com:oktadeveloper/okta-php-core-rest-api-example.git
-cd okta-php-core-rest-api-example
+https://github.com/rockers007/currency_exchange
+
 ```
 
 ### Configure the application
