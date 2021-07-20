@@ -30,13 +30,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/corephp/register.php",
-					"protocol": "http",
+					"raw": "https://rockerstech.com/currency_exchange/register.php",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"rockerstech",
+						"com"
 					],
 					"path": [
-						"corephp",
+						"currency_exchange",
 						"register.php"
 					]
 				}
@@ -84,35 +85,36 @@
 		{
 			"name": "Currency lIst",
 			"protocolProfileBehavior": {
-				"disabledSystemHeaders": {},
-				"disableBodyPruning": true
+				"disabledSystemHeaders": {}
 			},
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvcmVwaHBcLyIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvY29yZXBocFwvIiwiaWF0IjoxNjI2NzY3MTU4LCJleHAiOjE2MjY3NzA3NTgsImRhdGEiOnsidXNlcl9pZCI6IjYifX0.f7rOJahqE0mFEK6phV5u3d2id3iRTSK3jFyBoEKsdcQ",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvcm9ja2Vyc3RlY2guY29tXC9jdXJyZW5jeV9leGNoYW5nZVwvIiwiYXVkIjoiaHR0cHM6XC9cL3JvY2tlcnN0ZWNoLmNvbVwvY3VycmVuY3lfZXhjaGFuZ2VcLyIsImlhdCI6MTYyNjc3OTYyNCwiZXhwIjoxNjM5NzM5NjI0LCJkYXRhIjp7InVzZXJfaWQiOiI2In19.kWG5XcDUEkWwVcfmKs3O8_rPcsvUhymUwgOOSXnHSXI",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Token",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvcm9ja2Vyc3RlY2guY29tXC9jdXJyZW5jeV9leGNoYW5nZVwvIiwiYXVkIjoiaHR0cHM6XC9cL3JvY2tlcnN0ZWNoLmNvbVwvY3VycmVuY3lfZXhjaGFuZ2VcLyIsImlhdCI6MTYyNjc3OTYyNCwiZXhwIjoxNjM5NzM5NjI0LCJkYXRhIjp7InVzZXJfaWQiOiI2In19.kWG5XcDUEkWwVcfmKs3O8_rPcsvUhymUwgOOSXnHSXI",
 						"type": "text"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"rakesh@rockersinfo.com\",\r\n    \"password\":\"rakesh123\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "http://localhost/corephp/currencies",
+					"raw": "http://rockerstech.com/currency_exchange/currencies",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"rockerstech",
+						"com"
 					],
 					"path": [
-						"corephp",
+						"currency_exchange",
 						"currencies"
 					]
 				}
@@ -129,8 +131,8 @@
 				"method": "GET",
 				"header": [
 					{
-						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvcmVwaHBcLyIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvY29yZXBocFwvIiwiaWF0IjoxNjI2NzY3MTU4LCJleHAiOjE2MjY3NzA3NTgsImRhdGEiOnsidXNlcl9pZCI6IjYifX0.f7rOJahqE0mFEK6phV5u3d2id3iRTSK3jFyBoEKsdcQ",
+						"key": "Token",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvcm9ja2Vyc3RlY2guY29tXC9jdXJyZW5jeV9leGNoYW5nZVwvIiwiYXVkIjoiaHR0cHM6XC9cL3JvY2tlcnN0ZWNoLmNvbVwvY3VycmVuY3lfZXhjaGFuZ2VcLyIsImlhdCI6MTYyNjc3OTYyNCwiZXhwIjoxNjM5NzM5NjI0LCJkYXRhIjp7InVzZXJfaWQiOiI2In19.kWG5XcDUEkWwVcfmKs3O8_rPcsvUhymUwgOOSXnHSXI",
 						"type": "text"
 					}
 				],
@@ -144,13 +146,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/corephp/currencies/1",
+					"raw": "http://rockerstech.com/currency_exchange/currencies/1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"rockerstech",
+						"com"
 					],
 					"path": [
-						"corephp",
+						"currency_exchange",
 						"currencies",
 						"1"
 					]
@@ -168,8 +171,8 @@
 				"method": "GET",
 				"header": [
 					{
-						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvcmVwaHBcLyIsImF1ZCI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvY29yZXBocFwvIiwiaWF0IjoxNjI2NzY3MTU4LCJleHAiOjE2MjY3NzA3NTgsImRhdGEiOnsidXNlcl9pZCI6IjYifX0.f7rOJahqE0mFEK6phV5u3d2id3iRTSK3jFyBoEKsdcQ",
+						"key": "Token",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvcm9ja2Vyc3RlY2guY29tXC9jdXJyZW5jeV9leGNoYW5nZVwvIiwiYXVkIjoiaHR0cHM6XC9cL3JvY2tlcnN0ZWNoLmNvbVwvY3VycmVuY3lfZXhjaGFuZ2VcLyIsImlhdCI6MTYyNjc3OTYyNCwiZXhwIjoxNjM5NzM5NjI0LCJkYXRhIjp7InVzZXJfaWQiOiI2In19.kWG5XcDUEkWwVcfmKs3O8_rPcsvUhymUwgOOSXnHSXI",
 						"type": "text"
 					}
 				],
@@ -183,13 +186,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/corephp/currencies/1/history",
+					"raw": "http://rockerstech.com/currency_exchange/currencies/1/history",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"rockerstech",
+						"com"
 					],
 					"path": [
-						"corephp",
+						"currency_exchange",
 						"currencies",
 						"1",
 						"history"
